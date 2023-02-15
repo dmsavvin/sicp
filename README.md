@@ -1,3 +1,5 @@
+[![Racket CI](https://github.com/dmsavvin/sicp/actions/workflows/racketci.yml/badge.svg)](https://github.com/dmsavvin/sicp/actions/workflows/racketci.yml)
+
 ### The goal
 Work through the Structure and Interpretation of Computer Programs book.
 
