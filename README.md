@@ -13,3 +13,6 @@ Work through the Structure and Interpretation of Computer Programs book.
 + Test (`$ raco pkg install rackunit`)
 + SICP support for DrRacket (`$ raco pkg install sicp`)
 + Lint (`$ raco pkg install review`)
+
+### Other solution repositories
+[https://github.com/ivanjovanovic/sicp](https://github.com/ivanjovanovic/sicp)
