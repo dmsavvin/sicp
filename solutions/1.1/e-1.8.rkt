@@ -11,7 +11,7 @@
 
 ;Solution
 
-(define (cube x) (* x x x))
+;(define (cube x) (* x x x))
 
 (define (good-enough? guess next-guess)
   (< (/ (abs (- guess next-guess)) guess) 0.00000000001))

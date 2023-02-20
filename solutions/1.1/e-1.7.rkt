@@ -46,10 +46,10 @@
 ;increase the accuracy for the small arguments and fix the infinite loop error for
 ;the big arguments
 
-(define (square x) (* x x))
+;(define (square x) (* x x))
 
-(define (good-enough? guess x)
-  (< (abs (- (square guess) x)) 0.001))
+;(define (good-enough? guess x)
+;  (< (abs (- (square guess) x)) 0.001))
 
 (define (new-good-enough? guess next-guess)
   (< (/ (abs (- guess next-guess)) guess) 0.00000000001))
