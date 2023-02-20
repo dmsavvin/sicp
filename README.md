@@ -14,5 +14,7 @@ Work through the Structure and Interpretation of Computer Programs book.
 + SICP support for DrRacket (`$ raco pkg install sicp`)
 + Lint (`$ raco pkg install review`)
 
+Thanks to [https://github.com/hexlet-boilerplates/sicp-racket](https://github.com/hexlet-boilerplates/sicp-racket)
+
 ### Other solution repositories
 [https://github.com/ivanjovanovic/sicp](https://github.com/ivanjovanovic/sicp)
