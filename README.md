@@ -18,3 +18,5 @@ Thanks to [https://github.com/hexlet-boilerplates/sicp-racket](https://github.co
 
 ### Other solution repositories
 [https://github.com/ivanjovanovic/sicp](https://github.com/ivanjovanovic/sicp)
+
+[https://billthelizard.blogspot.com/2009/10/sicp-challenge.html](https://billthelizard.blogspot.com/2009/10/sicp-challenge.html)
