@@ -71,12 +71,12 @@
           (else (newline) (display "done"))))
   (if (divides? 2 begin) (iter (+ begin 1)) (iter begin)))
 
-(search-for-prime 1000000 1000038)
-(search-for-prime 10000000 10000104)
-(search-for-prime 100000000 100000048)
-(search-for-prime 1000000000 1000000022)
-(search-for-prime 10000000000 10000000062)
-(search-for-prime 100000000000 100000000058)
+;(search-for-prime 1000000 1000038)
+;(search-for-prime 10000000 10000104)
+;(search-for-prime 100000000 100000048)
+;(search-for-prime 1000000000 1000000022)
+;(search-for-prime 10000000000 10000000062)
+;(search-for-prime 100000000000 100000000058)
 
 ;| Starting value | Average duration | Current duration / |
 ;|                |                  | previous duration  |
