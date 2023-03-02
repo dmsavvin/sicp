@@ -1,6 +1,5 @@
 #lang sicp
 
-
 (#%require rackunit)
 
 ;Exercise 1.22
@@ -79,17 +78,18 @@
 (search-for-prime 10000000000 10000000062)
 (search-for-prime 100000000000 100000000058)
 
-;| Starting value | Average duration | Current duration / previous duration|
-;+----------------+------------------+-------------------------------------+
-;| 1000000        |      40.3        |                                     |
-;| 10000000       |     121.7        |      3.02                           |
-;| 100000000      |     427.0        |      3.51                           |
-;| 1000000000     |    1484.3        |      3.48                           |
-;| 10000000000    |    6394.3        |      4.31                           |
-;| 100000000000   |   17047.7        |      2.67                           |
+;| Starting value | Average duration | Current duration / |
+;|                |                  | previous duration  |
+;+----------------+------------------+--------------------+
+;| 1000000        |      40.3        |                    |
+;| 10000000       |     121.7        |      3.02          |
+;| 100000000      |     427.0        |      3.51          |
+;| 1000000000     |    1484.3        |      3.48          |
+;| 10000000000    |    6394.3        |      4.31          |
+;| 100000000000   |   17047.7        |      2.67          |
 
 ;As tested numbers grow by the factor of 10 time required for testing grows by
-;the factor of ~3.4 which is quiet close to the theoretically predicted √10
-;which is ~3.16
+;the factor of ~3.4 (on average) which is quiet close to the theoretically
+;predicted √10 which is ~3.16
 
 
