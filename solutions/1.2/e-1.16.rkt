@@ -19,13 +19,13 @@
 ;Solution
 
 (define (iter-fast-exp b-fe n-fe)
-  (define (iter a b b-sq n); invariants are b-sq == b*b, a*b^n
+  (define (iter a b n); invariant a*b^n
     (cond ((= n 0) a)
           ((= (remainder n 2) 1)
-           (iter (* a b) b b-sq (- n 1)))
+           (iter (* a b) b (- n 1)))
           (else
-           (iter (* a b-sq) b-sq (* b-sq b-sq) (- (/ n 2) 1)))))
-  (iter 1 b-fe (* b-fe b-fe) n-fe))
+           (iter a (* b b) (/ n 2)))))
+  (iter 1 b-fe n-fe))
 
 
 (check-equal? (iter-fast-exp 2 3) 8)
