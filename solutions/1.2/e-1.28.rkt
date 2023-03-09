@@ -49,7 +49,9 @@
 (define (mr-test? n)
   (define (try-it a)
     (= (expmod a (- n 1) n) 1))
-  (try-it (max 1 (random (- n 1))))) ;a is chosen randomly from [1, n-1]
+  (if (= n 1)
+      #f
+      (try-it (max 1 (random n))))) ;a is chosen randomly from [1, n-1]
  
 (define (fast-prime? n times)
   (cond ((= times 0) true)
@@ -64,6 +66,7 @@
 (check-true (fast-prime? 1451 10))
 
 ;Composit numbers
+(check-true (not (fast-prime? 1 10)))
 (check-true (not (fast-prime? 4 10)))
 (check-true (not (fast-prime? 100 10)))
 (check-true (not (fast-prime? 121 10)))
