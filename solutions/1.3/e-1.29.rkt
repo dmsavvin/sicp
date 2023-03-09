@@ -29,7 +29,7 @@
   (* (sum f (+ a (/ dx 2.0)) add-dx b)
      dx))
 
-(define (qube x) (* x x x))
+(define (cube x) (* x x x))
 
 ;Simpson’s Rule numerical integration
 (define (sr-int f a b n)
@@ -52,10 +52,10 @@
 (define (is-closer-to target)
   (lambda (a b) (< (abs (- target a)) (abs (- target b)))))
 
-(define apr-100 (integral qube 0 1 0.01))
-(define apr-1000 (integral qube 0 1 0.001))
-(define sr-apr-100 (sr-int qube 0 1 100))
-(define sr-apr-1000 (sr-int qube 0 1 1000))
+(define apr-100 (integral cube 0 1 0.01))
+(define apr-1000 (integral cube 0 1 0.001))
+(define sr-apr-100 (sr-int cube 0 1 100))
+(define sr-apr-1000 (sr-int cube 0 1 1000))
 
 (check (is-closer-to 0.25) sr-apr-100 apr-100)
 (check (is-closer-to 0.25) sr-apr-1000 apr-1000)
