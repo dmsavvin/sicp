@@ -25,10 +25,10 @@
          (sum term (next a) next b))))
 
 (define (sum-iter term a next b)
-  (define (iter a result)
-    (if (> a b)
+  (define (iter x result)
+    (if (> x b)
         result
-        (iter (next a) (+ result (term a)))))
+        (iter (next x) (+ result (term x)))))
   (iter a 0))
 
 (define (cube x) (* x x x))
