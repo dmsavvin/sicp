@@ -13,12 +13,12 @@
 
 ;Solution
 
-(define (cont-frac-rec n d k)
-  (define (rec k_)
-    (if (= k_ k)
-        (/ (n k_) (d k_))
-        (/ (n k_) (+ (d k_) (rec (+ k_ 1))))))
-  (rec 1))
+;(define (cont-frac-rec n d k)
+;  (define (rec k_)
+;    (if (= k_ k)
+;        (/ (n k_) (d k_))
+;        (/ (n k_) (+ (d k_) (rec (+ k_ 1))))))
+;  (rec 1))
 
 (define (cont-frac-iter n d k)
   (define (iter k_ res)

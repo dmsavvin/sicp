@@ -17,7 +17,7 @@
 (define tolerance 0.00001)
 (define (fixed-point f first-guess)
   (define (try guess)
-    (let ((next (f guess)))
+    (let ([next (f guess)])
       (display " --> ")
       (display guess)
       (newline)
@@ -34,7 +34,7 @@
 
 (define (f x) (/ (log 1000) (log x)))
 
-(define (av-damp f) (lambda (x) (/ (+ x (f x)) 2)))
+(define (av-damp f_) (lambda (x) (/ (+ x (f_ x)) 2)))
 
 
 (check-true (close-enough? 4.55553

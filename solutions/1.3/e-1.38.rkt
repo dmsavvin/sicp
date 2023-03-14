@@ -27,13 +27,13 @@
         (iter (- k_ 1) (/ (n k_) (+ (d k_) res)))))
   (iter k 0))
 
-(define (n-test i) 1)
+(define (n-test i) (if (> i 0) 1 1))
 (define (d-test i)
   (if (= (remainder i 3) 2)
       (* (+ (/ (- i 2) 3) 1) 2)
       1))
 
-(define (n i) 1.0)
+(define (n i) (if (> i 0) 1.0 1.0))
 (define (d i)
   (if (= (remainder i 3) 2)
       (* (+ (/ (- i 2) 3) 1) 2)

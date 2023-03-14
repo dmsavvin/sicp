@@ -45,11 +45,11 @@
         (iter (- k_ 1) (/ (n k_) (+ (d k_) res)))))
   (iter k 0))
 
-(define (n-test i) 1)
-(define (d-test i) 1)
+(define (n-test i) (if (> i 0) 1 1))
+(define (d-test i) (if (> i 0) 1 1))
 
-(define (n i) 1.0)
-(define (d i) 1.0)
+(define (n i) (if (> i 0) 1.0 1.0))
+(define (d i) (if (> i 0) 1.0 1.0))
 
 (define (close-enough? v1 v2 tolerance)
   (< (abs (- v1 v2)) tolerance))

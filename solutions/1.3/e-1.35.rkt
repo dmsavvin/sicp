@@ -17,7 +17,7 @@
 (define tolerance 0.00001)
 (define (fixed-point f first-guess)
   (define (try guess)
-    (let ((next (f guess)))
+    (let ([next (f guess)])
       (if (close-enough? guess next tolerance)
           next
           (try next))))
